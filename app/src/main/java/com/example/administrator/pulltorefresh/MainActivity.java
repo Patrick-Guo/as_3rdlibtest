@@ -4,6 +4,8 @@ import android.os.AsyncTask;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
+import android.widget.ImageView;
 import android.widget.ListView;
 
 import com.handmark.pulltorefresh.library.PullToRefreshBase;
@@ -13,11 +15,12 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Timer;
 
-public class MainActivity extends AppCompatActivity  {
+public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
     private PullToRefreshListView pullToRefreshListView;
     private MyAdapter myAdapter;
     private List<String> mData;
+    private ImageView ivMenu;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,12 +36,24 @@ public class MainActivity extends AppCompatActivity  {
             }
         });
 
+        ivMenu = (ImageView) findViewById(R.id.sildingmenu);
+        ivMenu.setOnClickListener(this);
+
         mData = new ArrayList<>();
         mData.add("111");
         mData.add("222");
         myAdapter = new MyAdapter(this, mData);
         pullToRefreshListView.setAdapter(myAdapter);
 
+    }
+
+    @Override
+    public void onClick(View v) {
+        switch (v.getId()){
+            case R.id.sildingmenu:
+                Log.v("aaa", "bbb");
+                break;
+        }
     }
 
     private class GetDataTask extends AsyncTask<Void, Void, String[]>{

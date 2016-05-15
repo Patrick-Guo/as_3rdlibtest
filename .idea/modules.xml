@@ -3,8 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/pulltorefresh.iml" filepath="$PROJECT_DIR$/pulltorefresh.iml" />
-      <module fileurl="file://$PROJECT_DIR$/pulltorefresh/pulltorefresh-pulltorefresh.iml" filepath="$PROJECT_DIR$/pulltorefresh/pulltorefresh-pulltorefresh.iml" />
+      <module fileurl="file://$PROJECT_DIR$/as_3rdlibtest.iml" filepath="$PROJECT_DIR$/as_3rdlibtest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pulltorefresh/pulltorefresh.iml" filepath="$PROJECT_DIR$/pulltorefresh/pulltorefresh.iml" />
     </modules>
   </component>
 </project>
